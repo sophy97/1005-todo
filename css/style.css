@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(198, 228, 238);
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: lighter;
+    font-family: 'Single Day', cursive;
+}
+img {
+    width: 150px; height: 130px;
+}
+#clock {
+    display: inline-block;
+    padding: 5px 25px;
+    border: 3px solid lightskyblue;
+    border-radius: 30%;
+}
+
+#todo-board {
+    list-style: none;
+}
+#todo-board, .footer {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 0.7em;
+}
