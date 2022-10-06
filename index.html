@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- 시계 영역 -->
@@ -21,14 +22,14 @@
     </header>
 
     <main class="main">
-    <!-- todo 입력 공간 -->
-    <form id="todo-form" class="hidden">
-        <input type="text" id="todo" placeholder="할 일 입력">
-        <input id="button" type="button" value="+">
+    <!-- 투두 입력 폼 -->
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="할일을 입력하세요">
+        <input type="submit" value="+">
     </form>
+
     <!-- todo 보드 공간 -->
-        <ul id="todo-board">
-        </ul>
+        <ul id="todo-board"></ul>
     </main>
 
     <!-- 완료한 일의 개수 출력하기 -->
@@ -37,8 +38,10 @@
     </footer>
 
     <!-- 자바스크립트 연결 -->
-    <script src="./js/clock.js"></script>
-    <script src="./js/todolist.js"></script>
+    <!-- <script src="./js/clock.js"></script>
+    <script src="./js/todolist.js"></script> -->
 
+    <!-- 제이쿼리만, js연결 -->
+        <script src="./todoJQuery.js"></script>
 </body>
 </html>
